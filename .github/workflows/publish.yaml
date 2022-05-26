@@ -39,7 +39,7 @@ jobs:
       run: |
         docker build -t besant:$IMAGE_TAG .
         docker tag besant:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/besant:$IMAGE_TAG
-        docker tag besant:latest 313422618945.dkr.ecr.eu-central-1.amazonaws.com/besant:latest
+        docker tag besant:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/besant:latest
         docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/besant:$IMAGE_TAG
         docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/besant:latest
       
