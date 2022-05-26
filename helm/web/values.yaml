@@ -47,8 +47,8 @@ ingress:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: ${certificate_arn}
-    alb.ingress.kubernetes.io/tags: Name=web-app, Environment=dev
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:313422618945:certificate/b9d7ebea-95d9-4c71-bb9f-167e2aedc45a
+    alb.ingress.kubernetes.io/tags: Name=web, Environment=dev
     alb.ingress.kubernetes.io/group.name: web
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
